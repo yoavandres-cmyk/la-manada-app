@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBf2TU-m_OwHGfZbVH4hiF_8pWWsJep89I",
-  authDomain: "la-manada-app.firebaseapp.com",
-  projectId: "la-manada-app",
-  storageBucket: "la-manada-app.firebasestorage.app",
-  messagingSenderId: "802190933986",
-  appId: "1:802190933986:web:5138b0fd6ba5782ac883bb"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
